@@ -14,7 +14,7 @@
             "windows": "\uf871 "
           },
           "style": "plain",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}  ",
+          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} {{.HostName}} ",
           "type": "os"
         }
       ],
@@ -80,7 +80,7 @@
             "always_enabled": true
           },
           "style": "plain",
-          "template": "\ue285 ",
+          "template": "> ",
           "type": "exit"
         }
       ],
