@@ -84,7 +84,7 @@
             "always_enabled": true
           },
           "style": "plain",
-          "template": "\u2570\u2500 ",
+          "template": "\ue285 ",
           "type": "exit"
         }
       ],
@@ -95,7 +95,7 @@
   "transient_prompt": {
     "background": "transparent",
     "foreground": "#FEF5ED",
-    "template": "> "
+    "template": "\ue285 "
   },
   "version": 2
 }
