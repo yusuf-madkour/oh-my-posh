@@ -59,19 +59,6 @@
       "segments": [
         {
           "style": "plain",
-          "template": "\u256d\u2500",
-          "type": "text"
-        },
-        {
-          "properties": {
-            "time_format": "15:04"
-          },
-          "style": "plain",
-          "template": " \u2665 {{ .CurrentDate | date .Format }} |",
-          "type": "time"
-        },
-        {
-          "style": "plain",
           "template": " \uf292 ",
           "type": "root"
         },
