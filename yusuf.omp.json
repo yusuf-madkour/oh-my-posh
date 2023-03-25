@@ -8,7 +8,6 @@
         {
           "background": "#FEF5ED",
           "foreground": "#011627",
-          "leading_diamond": "\ue0b2",
           "properties": {
             "macos": "\uf179 ",
             "ubuntu": "\uf31b ",
@@ -18,15 +17,23 @@
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}",
           "trailing_diamond": "<transparent,#FEF5ED>\ue0b2</>",
           "type": "os"
-        },
+        }
+      ],
+      "type": "prompt"
+    },
+	{
+      "alignment": "right",
+      "newline": false,
+      "segments": [
         {
-          "background": "#FEF5ED",
-          "foreground": "#011627",
-          "leading_diamond": "\ue0b2",
-          "style": "diamond",
-          "template": "\uf489 {{ .Name }}",
-          "trailing_diamond": "<transparent,#FEF5ED>\ue0b2</>",
-          "type": "shell"
+			"properties": {
+            "folder_icon": "\uf07b ",
+            "folder_separator_icon": " \uf554 ",
+            "home_icon": "\uf7db "
+          },
+          "style": "plain",
+          "template": " {{ .PWD }} ",
+          "type": "path"
         }
       ],
       "type": "prompt"
@@ -61,16 +68,6 @@
           "style": "plain",
           "template": " \uf292 ",
           "type": "root"
-        },
-        {
-          "properties": {
-            "folder_icon": "\uf07b ",
-            "folder_separator_icon": " \uf554 ",
-            "home_icon": "\uf7db "
-          },
-          "style": "plain",
-          "template": " {{ .Path }} ",
-          "type": "path"
         }
       ],
       "type": "prompt"
@@ -91,11 +88,11 @@
       "type": "prompt"
     }
   ],
-  "console_title_template": "{{ .Folder }}",
+  "console_title_template": "{{.Shell}}",
   "transient_prompt": {
     "background": "transparent",
     "foreground": "#FEF5ED",
-    "template": "\ue285 "
+    "template": "> "
   },
   "version": 2
 }
