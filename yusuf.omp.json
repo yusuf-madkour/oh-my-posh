@@ -95,7 +95,7 @@
   "transient_prompt": {
     "background": "transparent",
     "foreground": "#FEF5ED",
-    "template": "\ue285 "
+    "template": "> "
   },
   "version": 2
 }
