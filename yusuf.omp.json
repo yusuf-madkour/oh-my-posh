@@ -13,7 +13,7 @@
             "ubuntu": "\uf31b ",
             "windows": "\uf871 "
           },
-          "style": "diamond",
+          "style": "plain",
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}",
           "type": "os"
         }
